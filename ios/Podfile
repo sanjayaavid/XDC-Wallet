@@ -1,0 +1,35 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'XDCWallet' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for XDCWallet
+
+  target 'XDCWallet-tvOSTests' do
+    inherit! :search_paths
+    # Pods for testing
+    pod 'react-native-webview', :path => '../node_modules/react-native-webview'
+
+  end
+
+  target 'XDCWalletTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
+
+target 'XDCWallet-tvOS' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for XDCWallet-tvOS
+
+  target 'XDCWallet-tvOSTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
